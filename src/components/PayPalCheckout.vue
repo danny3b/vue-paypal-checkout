@@ -18,7 +18,7 @@ export default {
   methods: {
     payment() {
       const vue = this;
-
+      vue.$emit('payment-initialized');
       const transaction = Object.assign({
         amount: {
           total: this.amount,
